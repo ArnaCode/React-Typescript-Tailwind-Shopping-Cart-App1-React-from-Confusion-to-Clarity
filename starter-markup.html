@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopping Cart App</title>
+  </head>
+  <body class="bg-gray-900">
+    <main class="flex flex-col gap-4 text-white p-6">
+      <header
+        class="flex justify-between items-center p-6 bg-gray-800 text-white rounded-lg"
+      >
+        <h1 class="text-2xl font-bold">Shopping Cart</h1>
+        <p
+          class="bg-amber-600 text-white text-lg font-semibold py-1 px-4 rounded-full"
+        >
+          0 Items
+        </p>
+      </header>
+
+      <div class="flex flex-col md:flex-row justify-between gap-4">
+        <div class="w-full md:w-1/2 bg-gray-800 p-6 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-4">Products</h2>
+          <ul class="flex flex-col gap-y-4 *:gap-x-6">
+            <li class="flex justify-between items-center">
+              <h3 class="text-lg font-medium">Product A</h3>
+              <p class="grow text-sm text-gray-400">$25</p>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Add to Cart
+              </button>
+            </li>
+            <li class="flex justify-between items-center">
+              <h3 class="text-lg font-medium">Product B</h3>
+              <p class="grow text-sm text-gray-400">$40</p>
+
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Add to Cart
+              </button>
+            </li>
+            <li class="flex justify-between items-center">
+              <h3 class="text-lg font-medium">Product B</h3>
+              <p class="grow text-sm text-gray-400">$30</p>
+
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-full md:w-1/2 bg-gray-800 p-6 rounded-lg">
+          <h2 class="text-xl font-semibold mb-4">Shopping Cart</h2>
+
+          <p class="text-gray-400 my-4">Your cart is empty.</p>
+
+          <ul>
+            <li class="flex justify-between items-center mb-4">
+              <div>
+                <h3 class="text-lg font-medium">Produt A</h3>
+                <p class="text-sm text-gray-400">$25 x 5</p>
+              </div>
+
+              <div class="flex items-center gap-2 *:transition-colors">
+                <button
+                  class="bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-3 rounded"
+                >
+                  +
+                </button>
+                <button
+                  class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-1 px-3 rounded"
+                >
+                  -
+                </button>
+                <button
+                  class="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded"
+                >
+                  Remove
+                </button>
+              </div>
+              <p class="text-sm font-semibold text-blue-400">$125</p>
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-bold">Total: $125</h3>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
